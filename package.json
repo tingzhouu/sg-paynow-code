@@ -1,7 +1,17 @@
 {
   "name": "sg-paynow-code",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "description": "PayNow code generator to receive payments in Singapore.",
+  "keywords": [
+    "sg",
+    "paynow",
+    "qrcode",
+    "payment"
+  ],
   "license": "MIT",
+  "authors": [
+    "Lim Ting Zhou (https://github.com/tingzhouu)"
+  ],
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [

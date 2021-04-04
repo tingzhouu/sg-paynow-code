@@ -23,19 +23,28 @@ import { generatePayNowCode } from 'sg-paynow-code';
 // OR
 const { generatePayNowCode } = require('sg-paynow-code');
 
+const options = {
+  paymentAmount: 888.88,
+  recipientIdentifierType: 'MOBILE',
+  recipientIdentifier: '+6590901234',
+  description: 'Payment reference XX12345678',
+  editable: false,
+  expiryDate: '20210415',
+};
+
 const payNowCode = generatePayNowCode(options);
 ```
 
 ## Options
 
-| Option                  | Description                                                                                                                                                                                                                   |               Type               | Is required? |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :----------: |
-| paymentAmount           | Amount to transfer. **Note:** Will be rounded to the nearest 2 decimal places if the amount contains > 2 decimal places.                                                                                                      |              Number              |     Yes      |
-| recipientIdentifierType | To transfer to either a mobile number or UEN.                                                                                                                                                                                 | String. Either 'MOBILE' or 'UEN' |     Yes      |
-| recipientIdentifier     | Either your mobile number or UEN, depending on what you have specified in `recipientIdentifierType`. Note: for mobile number, prepend '+65'. For example, to indicate `'90901234'` as the mobile number, use `'+6590901234'`. |              String              |     Yes      |
-| description             | Details of this transfer. Will be reflected in recipient's transactions statement.                                                                                                                                            |              String              |     Yes      |
-| editable                | Whether the payee can edit the details.                                                                                                                                                                                       |             Boolean              |     Yes      |
-| expiryDate              | Expiry date of the code, the format YYYYMMDD. For example, to set the expiry date to 15 April 2021, use `'20210415'`.                                                                                                         |              String              |      No      |
+| Option                  | Description                                                                                                                                                                                                                     |                 Type                 | Is required? |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------: | :----------: |
+| paymentAmount           | Amount to transfer. **Note:** Will be rounded to the nearest 2 decimal places if the amount contains > 2 decimal places.                                                                                                        |                Number                |     Yes      |
+| recipientIdentifierType | To transfer to either a mobile number or UEN.                                                                                                                                                                                   | String. Either `'MOBILE'` or `'UEN'` |     Yes      |
+| recipientIdentifier     | Either your mobile number or UEN, depending on what you have specified in `recipientIdentifierType`. Note: for mobile number, prepend `'+65'`. For example, to indicate `'90901234'` as the mobile number, use `'+6590901234'`. |                String                |     Yes      |
+| description             | Details of this transfer. Will be reflected in recipient's transactions statement.                                                                                                                                              |                String                |     Yes      |
+| editable                | Whether the payee can edit the details.                                                                                                                                                                                         |               Boolean                |     Yes      |
+| expiryDate              | Expiry date of the code, in the format `YYYYMMDD`. For example, to set the expiry date to 15 April 2021, use `'20210415'`.                                                                                                      |                String                |      No      |
 
 ## Credits
 
