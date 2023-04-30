@@ -1,5 +1,20 @@
 # SG PayNow Code
 
+<p align="center">
+  <a href="https://github.com/tingzhouu/sg-paynow-code/blob/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="sg-paynow-code is released under the MIT license." />
+  </a>
+  <a href="https://github.com/tingzhouu/sg-paynow-code/actions/workflows/ci-test.yaml">
+    <img src="https://github.com/tingzhouu/sg-paynow-code/actions/workflows/ci-test.yaml/badge.svg" alt="Current CI build status." />
+  </a>
+  <a href="https://www.npmjs.com/package/sg-paynow-code">
+    <img src="https://www.npmjs.com/package/sg-paynow-code" alt="Current npm package version." />
+  </a>
+  <a href="https://github.com/tingzhouu/sg-paynow-code">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
+  </a>
+</p>
+
 SG PayNow Code is a JavaScript library to generate a PayNow Code. You can create a QR Code for people to pay you!
 
 ## Getting Started
