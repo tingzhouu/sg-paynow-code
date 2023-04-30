@@ -1,8 +1,5 @@
-import { add } from './add.js'
-import { subtract } from './subtract.js'
-import generatePayNowCode from './generatePayNowCode.js'
+import generatePayNowCode from './generatePayNowCode'
+
 export {
-  add,
-  subtract,
   generatePayNowCode,
 }

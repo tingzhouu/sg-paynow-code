@@ -1,5 +1,5 @@
-import getStrWithOptions from './strWithOptions.js'
-import crc16CheckSum from './crc16CheckSum.js'
+import getStrWithOptions from './strWithOptions'
+import crc16CheckSum from './crc16CheckSum'
 
 export interface PayNowOptions {
   paymentAmount: number,
