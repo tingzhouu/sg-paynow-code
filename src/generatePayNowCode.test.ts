@@ -44,8 +44,4 @@ describe('generatePayNowCode', () => {
       '00020101021126370009SG.PAYNOW010120210201023709P030105204000053037025406515.985802SG5902NA6009Singapore62320128Payment reference XX123456786304CFEB'
     );
   });
-
-  it('should fail', () => {
-    assert.equal(true, false);
-  });
 });
