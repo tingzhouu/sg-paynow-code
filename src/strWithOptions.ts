@@ -1,5 +1,5 @@
-import padLeft from './padLeft.js'
-import type {PayNowOptions} from './generatePayNowCode.js'
+import padLeft from './padLeft'
+import type {PayNowOptions} from './generatePayNowCode'
 
 function getFormattedPaymentAmount(opts: PayNowOptions) {
 const paymentAmount = opts.paymentAmount.toLocaleString("en-US", { maximumFractionDigits: 2, minimumFractionDigits: 2 });

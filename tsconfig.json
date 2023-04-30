@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "ES2020",
+    "module": "CommonJS",
+    "target": "ES6",
     "strict": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "outDir": "./lib/esm",
-    "declaration": true
+    "declaration": true,
+    "esModuleInterop": true
   },
-  "include": ["./src"]
+  "include": ["./src"],
+  "exclude": ["./**/*.test.ts"]
 }
