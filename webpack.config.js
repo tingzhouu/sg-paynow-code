@@ -18,5 +18,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'lib/webpack'),
     filename: 'bundle.js',
+    library: {
+      type: 'umd',
+    },
   },
 };

@@ -1,6 +1,6 @@
 {
   "name": "sg-paynow-code",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "PayNow code generator to receive payments in Singapore.",
   "keywords": [
     "sg",
