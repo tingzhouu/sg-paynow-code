@@ -1,6 +1,6 @@
 {
   "name": "sg-paynow-code",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "PayNow code generator to receive payments in Singapore.",
   "keywords": [
     "sg",
@@ -19,7 +19,7 @@
     "lib/"
   ],
   "scripts": {
-    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && webpack",
     "prepublishOnly": "npm run tsc",
     "test": "mocha --require ts-node/register src/**/*.test.ts",
     "test:coverage": "nyc npm run test"
@@ -29,8 +29,11 @@
     "@types/node": "^18.16.3",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
+    "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
   },
   "nyc": {
     "check-coverage": true,
