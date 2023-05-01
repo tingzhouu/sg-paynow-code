@@ -15,7 +15,7 @@
   </a>
 </p>
 
-SG PayNow Code is a JavaScript library to generate a PayNow Code. You can create a QR Code for people to pay you!
+SG PayNow Code is a JavaScript library to generate a PayNow QR Code.
 
 ## Getting Started
 
@@ -30,6 +30,15 @@ If you use npm
 ```bash
 npm install sg-paynow-code
 ```
+
+From a browser
+```
+<script src="https://unpkg.com/sg-paynow-code/lib/webpack/bundle.js"></script>
+```
+
+## Example
+
+See [sample website](https://tingzhouu.github.io/sg-paynow-code).
 
 ## Usage
 
